@@ -1,0 +1,15 @@
+{
+  "name": "postman-collection",
+  "version": "1.0.0",
+  "description": "postman-test-collection",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "api-tests-production": "newman run tests/stack_care.com.postman_collection.json"
+  },
+  "author": "nagendra",
+  "dependencies": {
+    "newman": "^3.9.3"
+  }
+}

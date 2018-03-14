@@ -1,0 +1,129 @@
+{
+	"info": {
+		"name": "stack_care.com",
+		"_postman_id": "93a26d9c-b189-a833-ac57-680b62180211",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET- / Get all HUB_ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2546d45b-5e2f-46f1-999c-751017ce8ef8",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"Created\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "83c14ef88a4d4c1bad0940821cec7312",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"type": "any"
+						},
+						{
+							"key": "callBackUrl",
+							"type": "any"
+						},
+						{
+							"key": "authUrl",
+							"type": "any"
+						},
+						{
+							"key": "accessTokenUrl",
+							"type": "any"
+						},
+						{
+							"key": "clientId",
+							"type": "any"
+						},
+						{
+							"key": "clientSecret",
+							"type": "any"
+						},
+						{
+							"key": "clientAuth",
+							"type": "any"
+						},
+						{
+							"key": "grantType",
+							"type": "any"
+						},
+						{
+							"key": "scope",
+							"type": "any"
+						},
+						{
+							"key": "username",
+							"type": "any"
+						},
+						{
+							"key": "password",
+							"type": "any"
+						},
+						{
+							"key": "tokenType",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "redirectUri",
+							"type": "any"
+						},
+						{
+							"key": "refreshToken",
+							"type": "any"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n  \"client_id\":\"8on9nknddom9o8kbpnv96oxxjewp6\",\n  \"grant_type\":\"refresh_token\",\n  \"refresh_token\":\"\"\n  \n}"
+				},
+				"url": {
+					"raw": "https://dm-dot-care-api-staging.appspot.com/sites/dpor9jdo9rvkmjj5j8bxj5no5y6wy/hubs",
+					"protocol": "https",
+					"host": [
+						"dm-dot-care-api-staging",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"sites",
+						"dpor9jdo9rvkmjj5j8bxj5no5y6wy",
+						"hubs"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
